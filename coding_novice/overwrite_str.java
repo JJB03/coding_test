@@ -8,12 +8,12 @@ public class overwrite_str {
         String answer = "";
             //참고함
             //재도전 필수
-            int myStringLen = my_string.length();
-            int overwriteStrLen = overwrite_string.length();
+            int myStringLen = my_string.length(); //길이 재기
+            int overwriteStrLen = overwrite_string.length(); //길이 재기
 
-            answer += my_string.substring(0, s);
-            answer += overwrite_string;
-            answer += my_string.substring(overwriteStrLen+s, myStringLen);
+            answer += my_string.substring(0, s); //인덱스 자르는 개념. 0위치에서 s만큼 잘라 를 뜻함.
+            answer += overwrite_string; //자르고 overwrite를 붙임
+            answer += my_string.substring(overwriteStrLen+s, myStringLen); 
 
         return answer;
     }
