@@ -1,4 +1,6 @@
-public class overwrite_str {
+package retry;
+
+class overwrite_str {
     /* 문자열 겹쳐쓰기
      *문자열 my_string, overwrite_string과 정수 s가 주어집니다. 
      *문자열 my_string의 인덱스 s부터 overwrite_string의 길이만큼을 

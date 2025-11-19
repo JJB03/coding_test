@@ -5,7 +5,6 @@ class str_arr {
      * 문자열을 return 하는 solution함수를 작성해 주세요.
      */
     public String solution(String[] arr) {
-        String answer = "";
         
         //👩🏼‍💻하나의 버퍼를 사용해 문자열 계속 이어붙이는 것
         //객체를 새로 만들지 않아서 유용함 기억하자
