@@ -6,20 +6,18 @@ import java.util.Scanner;
 
 public class even_odd {
         public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        //지금 생각나는 방법은 for 돌리고 그 안에 if 적어서 거르기 -> 엥 for문을 왜 돌려 생각이 틀림
-        //switch 문으로 거르기
-    
-            int even = ( n % 2 );
-            if (even == 0) { // 40이면 2와 딱 떨어지니 even이 뜰 수 있음.
-                System.out.println(n +" " +"is even");
-            } else {
-                System.out.println(n + " " + "is odd");
-            }
-            
-        
-
+        try (Scanner sc = new Scanner(System.in)) {
+            int n = sc.nextInt();
+            //지금 생각나는 방법은 for 돌리고 그 안에 if 적어서 거르기 -> 엥 for문을 왜 돌려 생각이 틀림
+            //switch 문으로 거르기
+   
+                int even = ( n % 2 );
+                if (even == 0) { // 40이면 2와 딱 떨어지니 even이 뜰 수 있음.
+                    System.out.println(n +" " +"is even");
+                } else {
+                    System.out.println(n + " " + "is odd");
+                }
+        }
         try {
             System.out.println("정상작동하였습니다");
         } catch (Exception e) {

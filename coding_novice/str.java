@@ -14,6 +14,7 @@ public class str {
         for (String aString : str) {
             System.out.println(aString);
         }
+        sc.close();
     }
 }
 }   
