@@ -14,6 +14,6 @@ public class ladderGame {
         //변수 정의, person(참가자) / ladder(사다리) / answer(결과)
         
         Scanner sc = new Scanner(System.in);
-
+        sc.close();
     }
 }
