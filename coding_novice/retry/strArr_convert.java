@@ -1,6 +1,18 @@
+package retry;
 public class strArr_convert {
+    //👩🏼‍💻문제 이해부터가 난관이었음.
+    /* 일단 code와 mode(2진수) 가 있으며 얘네 교차검증
+    ret에 넣는다?
+    모르겠다 이건 서치 필수...
+     */
     public String solution(String code) {
         String answer = "";
+        //문자열 배열 선언하기.
+        String[] cd;
+        //2진수 mode 만들기
+        String mode = Integer.toBinaryString(0);
+        //두개 비교해서 넣을 장소
+        String ret = "";
         return answer;
     }
 }
