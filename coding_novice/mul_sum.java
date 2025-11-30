@@ -14,11 +14,12 @@ public class mul_sum {
         } 
         int sum = num_list_sum * num_list_sum; //합 제곱
 
-        int num_list_mul = 0;
+        int num_list_mul = 1; //아 바보이슈, 0으로 시작하면 0곱하기 나옴
         for (int i = 0; i < num_list.length; i++) {
             //모든 원소들의 곱 만들기, 이게 맞나.
-            num_list_mul += num_list[i] * num_list[i];
+            num_list_mul *= num_list[i];
             /*오답일 시,
+            num_list[i] * num_list[i]; 는 제곱이잖아.
              */
         }
         int mul = num_list_mul; //곱
