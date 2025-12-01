@@ -1,22 +1,33 @@
 package retry;
 public class strArr_convert {
-    //👩🏼‍💻문제 이해부터가 난관이었음.
-    /* 일단 code와 mode(2진수) 가 있으며 얘네 교차검증
-    ret에 넣는다?
-    모르겠다 이건 서치 필수...
+    //코드 처리하기 문제
+    /* 그러니까 1) 문자가 1인지 0인지 체크하고 짝수 홀수 구분하는 문제인듯
      */
     public String solution(String code) {
-        String answer = "";
-        //문자열 배열 선언하기.
-        String[] cd;
-        //2진수 mode 만들기
-        String mode = Integer.toBinaryString(0);
-        //두개 비교해서 넣을 장소
-        String ret = "";
-        return answer;
+        //바뀔 수 있는 문자열 생성
+        StringBuilder answer = new StringBuilder();
+        int mode = 0;
+        //반복-조건
+        for (int i = 0; i < code.length(); i++) {
+            //code.length 길이 체크해서 그만큼 돌아가기
+            char currentS = code.charAt(i); //String -> Char
+            // 이걸로 문자열 - 문자로 떼어내기
+            if (currentS == '1') { // 문자가 1이라면
+                mode = mode == 0 ? 1 : 0;
+                // mode가 0이면 1 아니면 0
+                continue;
+            } 
+            if (i % 2 == mode) { //만약 짝수라면
+                answer.append(currentS); //그냥 합한다
+            }
+        }
+        
+        return answer.length() == 0 ? "EMPTY" : answer.toString();
+        //아무것도 없다면 엠티 출력 아니면 그대로 문자열로 출력
     }
 }
 
+//https://develop-me-z.tistory.com/326#google_vignette 참고
 /*
 문자열 code가 주어집니다.
 code를 앞에서부터 읽으면서 만약 문자가 "1"이면 mode를 바꿉니다. 
