@@ -1,3 +1,4 @@
+package retry;
 public class control_wasd2_1 {
     //다시 해보기. 이게 더 보기 쉬움
         public String solution(int[] numLog) {
