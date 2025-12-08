@@ -1,4 +1,4 @@
-package retry;
+package retry.point_retry;
 
 class overwrite_str {
     /* 문자열 겹쳐쓰기

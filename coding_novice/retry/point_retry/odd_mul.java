@@ -1,4 +1,4 @@
-package retry;
+package retry.point_retry;
 public class odd_mul {
     /*
     양의 정수 n이 매개변수로 주어질 때,
