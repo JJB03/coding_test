@@ -1,5 +1,9 @@
+package retry;
+
+import java.util.Arrays;
+
 public class arr_chage2 {
-    /*
+    /* 수열과 쿼리2임.
     정수 배열 arr와 2차원 정수 배열 queries이 주어집니다. 
     queries의 원소는 각각 하나의 query를 나타내며, [s, e, k] 꼴입니다.
     각 query마다 순서대로 s ≤ i ≤ e인 
@@ -8,11 +12,23 @@ public class arr_chage2 {
     단, 특정 쿼리의 답이 존재하지 않으면 -1을 저장합니다.
      */
     public int[] solution(int[] arr, int[][] queries) {
-        int[] answer = {};
+        int[] answer = new int[queries.length];
+        Arrays.fill(answer, Integer.MAX_VALUE);
         for (int i = 0; i < queries.length; i++) {
-            //정수 인덱스 만들기
-            int idx1 = queries[i][0];
-            
+            //교환될 정수 인덱스 만들기
+            int s = queries[i][0];
+            int e = queries[i][1];
+            int k = queries[i][2];
+            //사이즈 측정
+            for (int j = s; j <= e; j++) {
+                if (arr[j] > k) {
+                    answer[i] = Math.min(arr[j], answer[i]);
+                }
+            }
+            if (answer[i] == Integer.MAX_VALUE) {
+                answer[i] = -1;
+            }
+
         }
         return answer;
     }
