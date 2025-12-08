@@ -9,6 +9,11 @@ public class arr_chage2 {
      */
     public int[] solution(int[] arr, int[][] queries) {
         int[] answer = {};
+        for (int i = 0; i < queries.length; i++) {
+            //정수 인덱스 만들기
+            int idx1 = queries[i][0];
+            
+        }
         return answer;
     }
 }
