@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class arr_change4 {
     /*
     정수 배열 arr가 주어집니다. 
@@ -12,7 +15,27 @@ public class arr_change4 {
     위 작업을 마친 후 만들어진 stk를 return 하는 solution 함수를 완성해 주세요.
      */
     public int[] solution(int[] arr) {
-        int[] stk = {};
-        return stk;
+        List<Integer> stk = new ArrayList<>();
+        int i = 0;
+
+        while (i < arr.length) {
+            // 조건 1: stk가 빈 배열일 경우
+            if (stk.isEmpty()) {
+                stk.add(arr[i]);
+                i++;
+            }
+            // 조건 2: stk 마지막 원소 < arr[i]
+            else if (stk.get(stk.size() - 1) < arr[i]) {
+                stk.add(arr[i]);
+                i++;
+            }
+            // 조건 3: stk 마지막 원소 >= arr[i]
+            else {
+                stk.remove(stk.size() - 1);
+                // i는 증가하지 않음
+            }
+        }
+
+        return stk.stream().mapToInt(Integer::intValue).toArray();
     }
 }
