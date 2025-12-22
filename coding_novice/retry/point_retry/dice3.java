@@ -1,3 +1,7 @@
+package retry.point_retry;
+import java.util.Arrays;
+
+
 public class dice3 {
     /*
     1부터 6까지 숫자가 적힌 주사위가 네 개 있습니다. 
@@ -10,6 +14,34 @@ public class dice3 {
      */
     public int solution(int a, int b, int c, int d) {
         int answer = 0;
+        int arr[] = {a, b, c, d};
+        Arrays.sort(arr);
+
+        if (arr[0] == arr[3]) {//4개 다 같은 수
+            answer = 1111 * arr[0];
+        } else if (arr[0] == arr[2]) { // 앞의 3개가 같음
+            int p = arr[0];
+            int q = arr[3];
+            answer = (int)Math.pow(10 * p + q, 2);
+        } else if (arr[1] == arr[3]) { // 뒤의 3개가 같음
+            int p = arr[1];
+            int q = arr[0];
+            answer = (int)Math.pow(10 * p + q, 2);
+        } else if(arr[0] == arr[1] && arr[2] == arr[3]){
+            // 2, 2일치
+            answer = (arr[0] + arr[2]) * Math.abs(arr[0] - arr[2]);
+        } else if(arr[0] == arr[1]){
+            //2개 일치
+            answer = arr[2] * arr[3];
+        } else if(arr[1] == arr[2]){
+            answer = arr[0] * arr[3];
+        } else if(arr[2] == arr[3]){
+            answer = arr[0] * arr[1];
+        } else {
+            //다 틀림
+            answer = arr[0];
+        }
+
         return answer;
     }
 }
