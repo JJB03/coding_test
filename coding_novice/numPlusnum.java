@@ -1,4 +1,4 @@
-package retry;
+
 public class numPlusnum {
     /*
     정수가 담긴 리스트 num_list가 주어집니다. 
