@@ -8,7 +8,7 @@ public class divide_nine {
      */
 
     //문법 이해 필요함.
-    public int solution(Strisng number) {
+    public int solution(String number) {
         int answer = 0;
         int sum = 0;
         String[] n_list = number.split("");
