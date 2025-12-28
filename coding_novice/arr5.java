@@ -8,5 +8,5 @@ intStrs의 원소는 숫자로 이루어져 있습니다.
     public int[] solution(String[] intStrs, int k, int s, int l) {
         int[] answer = {};
         return answer;
-    }s
+    }
 }
