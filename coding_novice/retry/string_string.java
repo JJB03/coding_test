@@ -18,7 +18,7 @@ my_string[i]의 인덱스 s부터 인덱스 e까지의 부분 문자열을 의�
             int e = parts[i][1];
             //자르면서 붙이기.
             sb.append(my_strings[i].substring(s, e+1));
-
+                                            //subString은 끝 인덱스를 포함하지 않아서 e+1을 함.
         }
         return sb.toString();
     }
