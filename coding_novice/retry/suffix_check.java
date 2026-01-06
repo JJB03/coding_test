@@ -7,6 +7,8 @@ public class suffix_check {
 문자열 my_string과 is_suffix가 주어질 때, 
 is_suffix가 my_string의 접미사라면 1을, 아니면 0을 return 하는 solution 함수를 작성해 주세요.
  */
+
+//👩🏼‍💻for문을 돌릴 필요가 없다고 함. 이 이유가 뭔지 스스로 알도록 하자.
     public int solution(String my_string, String is_suffix) {
         //그니까 즉, 음절 모두 띄우는 게 아닌 위에서 하나씩 -
             //my_string == is_suffix가 같다면 1
