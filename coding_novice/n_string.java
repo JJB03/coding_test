@@ -8,7 +8,7 @@ my_string	        n	result
     public String solution(String my_string, int n) {
         String answer = "";
         //그러니까 자르고 앞에 문장 꺼내오기.
-        //for문이 필요할까?
+        answer = my_string.substring(0, n); //0에서부터 n까지 잘라라.
         return answer;
     }
 }
