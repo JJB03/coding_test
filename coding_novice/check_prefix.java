@@ -9,6 +9,11 @@ is_prefix가 my_string의 접두사라면 1을, 아니면 0을 return 하는 sol
         public int solution(String my_string, String is_prefix) {
         int answer = 0;
         //일단 앞이 해당 문자로 시작되는 지 체크하면 될 거 같음.
+        //그럼 for문을 돌릴 필요가 없을 듯
+        if (my_string.startsWith(is_prefix)) {
+            //equals의 경우 문자열이 동일해야지만 통과
+            answer = 1;
+        } else answer = 0;
         
         return answer;
     }
