@@ -6,12 +6,17 @@ my_string에서 'a'의 개수, my_string에서 'b'의 개수,..., my_string에�
 순서대로 담은 길이 52의 정수 배열을 return 하는 solution 함수를 작성해 주세요.
  */
     public int[] solution(String my_string) {
-        int[] answer = {};//여기에 담음
+        int[] answer = new int[52];//여기에 담음
         //대소문자를 따로 분리해서 따로 세기?
         //일단 세는 거 만들자
         for (int i = 0; i < my_string.length(); i++) {
-            if () {
-                
+            //따로 쪼개기
+            char c = my_string.charAt(i);
+
+            if (c >= 'A' && c <= 'Z') { //c가 대문자
+                answer [c-'A']++;
+            } else if (c >= 'a' && c <= 'z'){ //소문자도 똑같을 줄 알았는데 26~52라서
+                answer [c-'a'+26]++; //26추가
             }
         }
         return answer;
