@@ -27,3 +27,16 @@ my_string에서 indices의 원소에 해당하는 인덱스의 글자를 지우�
         return sb.toString();
     }
 }
+
+/*
+이런 풀이도 있음
+String answer = "";
+String Builder sb = new StringBuilder(my_string);
+
+for(int i = 0; i < indices.length; i++) {
+    sb.setCahrAt(indices[i], ' '); 
+    //새로운 문자로 교체하는 것
+    //i번째 문자열이 ' '으로 교체됨을 의미
+}
+    return sb.toString().replace("","");
+ */
