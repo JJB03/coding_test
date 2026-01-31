@@ -1,4 +1,4 @@
-public class 1_is_near {
+public class one_is_near {
 /*
 정수 배열 arr가 주어집니다.
 이때 arr의 원소는 1 또는 0입니다. 
