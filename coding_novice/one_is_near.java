@@ -12,7 +12,12 @@ public class one_is_near {
 [1, 1, 1, 1, 0]	3	3
  */
     public int solution(int[] arr, int idx) {
-        int answer = 0;
-        return answer;
+        for (int i = idx; i < arr.length; i++) {
+            if (i >= idx && arr[i] == 1) {
+                return i;
+            }
+        }
+        return -1;
     }
+
 }
