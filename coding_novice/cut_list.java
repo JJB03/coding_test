@@ -15,20 +15,29 @@ n = 4 : num_list의 a번 인덱스부터 b번 인덱스까지 c 간격으로
         //slice 에 n / a / b / c, num_list는 가지각색
         List<Integer> n_list = new ArrayList<>();
         //조건 반복문으로 돌려야 할 듯.
-        for (int i = 0; i < num_list.length; i++) {
-            if (slicer[n] == 1) { //n이 1이라면
-                n_list.add(num_list[0] + num_list[2]);
-            } else if(slicer[n] == 2){
-                n_list.add(num_list[1] + num_list[3]);
-            } else if(slicer[n] == 3) {
-                n_list.add(num_list[1] + num_list[2]);
-            } else if(slicer[n] == 4) {
-                
-            } else {
-
-            }
-        }
         int[] answer = {};
+        //여기서 알아내야 할 거 -> list 범위로 넣는 방법
+        //1) if문 돌리기 2)swich문 돌기.
+        switch (slicer[n]) {
+            case 1:
+                
+                break;
+
+            case 2:
+                
+                break;
+
+            case 3:
+                
+                break;
+
+            case 4:
+                
+                break;
+        
+            default:
+                break;
+        }
         return answer;
     }
 }
