@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.IntStream;
 
 public class cut_list {
 /*
@@ -19,20 +20,25 @@ n = 4 : num_list의 a번 인덱스부터 b번 인덱스까지 c 간격으로
         //여기서 알아내야 할 거 -> list 범위로 넣는 방법
         //1) if문 돌리기 2)swich문 돌기.
         switch (slicer[n]) {
-            case 1:
-                
+            case 1: //for문을 돌릴 수 밖에 없는 형태같음
+                for (int i = num_list[0]; i < slicer[1]; i++) {
+                    n_list.add(num_list[i]);
+                }
                 break;
-
             case 2:
-                
+                for (int i = slicer[0]; i < num_list.length; i++) {
+                    n_list.add(num_list[i]);
+                }
                 break;
-
             case 3:
-                
+                for (int i = slicer[0]; i < slicer[1]; i++) {
+                    n_list.add(num_list[i]);
+                }
                 break;
-
             case 4:
-                
+                for (int i = slicer[0]; i < slicer[1]; slicer[3]++) {
+                    n_list.add([num_list[i]]);
+                }
                 break;
         
             default:
