@@ -1,4 +1,4 @@
-package coding_Lv1.retry;
+package java_test.coding_Lv1.retry;
 
 //vscode-gpt 연동해서 해결한 문제
 public class phoneNum_Blind {
