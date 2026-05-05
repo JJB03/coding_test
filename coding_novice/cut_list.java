@@ -37,7 +37,7 @@ n = 4 : num_list의 a번 인덱스부터 b번 인덱스까지 c 간격으로
                 break;
             case 4:
                 for (int i = slicer[0]; i < slicer[1]; slicer[3]++) {
-                    n_list.add([num_list[i]]);
+                    n_list.add(num_list[i]);
                 }
                 break;
         
