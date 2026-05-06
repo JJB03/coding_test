@@ -33,14 +33,20 @@ n에 따라 다음과 같이 num_list를 슬라이싱 하려고 합니다.
                     }
                     break;
                 case 4: //n = 4 : num_list의 a번 인덱스부터 b번 인덱스까지 c 간격으로
-                    for (int i = 0; i < answer.length; i++) {
-                        
+                    for (int i = a; i < b; ++c) {
+                        num.add(num_list[i]);
                     }
                     break;
             
                 default:
                     break;
             }
+            //이제 반환값 돌려야 하는데 array는 어떤 식으로 돌리냐?
+            int arr = num.size();
+                answer = new int [arr];
+                for (int i = 0; i < num.size(); i++) {
+                    answer[i] = num.get(i);
+                }
         return answer;
     }
 }
