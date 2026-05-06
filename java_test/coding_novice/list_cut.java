@@ -11,10 +11,8 @@ n = 4 : num_list의 a번 인덱스부터 b번 인덱스까지 c 간격으로
  */
         public int[] solution(int n, int[] slicer, int[] num_list) {
         int[] answer = {}; 
-        //그러니까 잘라야 함.
-        for (int i = 0; i < answer.length; i++) {
-            
-        }
+        //그러니까 잘라야 함. n이 1이면 0~b번까지, 2면 a ~ 끝까지 이런 식으로 조건이 있음.
+        //조건문 switch 혹은 if문 사용.
 
         return answer;
     }
