@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class list_cut {
 /*
 정수 n과 정수 3개가 담긴 리스트 slicer 그리고 정수 여러 개가 담긴 리스트 num_list가 주어집니다.
@@ -11,9 +13,34 @@ n = 4 : num_list의 a번 인덱스부터 b번 인덱스까지 c 간격으로
  */
         public int[] solution(int n, int[] slicer, int[] num_list) {
         int[] answer = {}; 
+        //👩🏼‍💻배열 소환해서 넣기
+        ArrayList<Integer> num = new ArrayList<>();
+
         //그러니까 잘라야 함. n이 1이면 0~b번까지, 2면 a ~ 끝까지 이런 식으로 조건이 있음.
         //조건문 switch 혹은 if문 사용.
+        int a = num_list[1];
+        int b = num_list[2];
+        int c = num_list[3];
+        
+            switch (n) {
+                case 1:
+                    for (int i = slicer[0]; i < b; i++) {
+                        num.add(num_list[i]); //그냥 i말고 num_list에 담긴 i
+                    }
+                    break;
+                case 2:
 
+                    break;
+                case 3:
+
+                    break;
+                case 4:
+
+                    break;
+            
+                default:
+                    break;
+            }
         return answer;
     }
 }
