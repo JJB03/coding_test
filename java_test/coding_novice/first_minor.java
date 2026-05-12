@@ -7,6 +7,9 @@ public class first_minor {
     public int solution(int[] num_list) {
         int answer = 0;
         //음수가 리스트가 될 수가 있나? 일단 조건문이 있음.
+        if (num_list[0] >= -1) {
+            num
+        }
         return answer;
     }
 }
