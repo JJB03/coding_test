@@ -5,11 +5,16 @@ public class first_minor {
     음수가 없다면 -1을 return합니다.
      */
     public int solution(int[] num_list) {
-        int answer = 0;
         //음수가 리스트가 될 수가 있나? 일단 조건문이 있음.
-        if (num_list[0] >= -1) {
-            num
+        if (num_list[0] >= 0) {
+            return -1;
+        } else {
+            for (int i = 0; i < num_list.length; i++) {
+                if (num_list[i] < 0) {
+                    return i;
+                }
+            }
         }
-        return answer;
+        return -1;
     }
 }
