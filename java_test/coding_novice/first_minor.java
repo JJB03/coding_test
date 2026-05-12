@@ -6,16 +6,12 @@ public class first_minor {
      */
     public int solution(int[] num_list) {
         //음수가 리스트가 될 수가 있나? 일단 조건문이 있음.
-        //어디가 문제인지 체크
-        if (num_list[0] >= 0) {
-            return -1;
-        } else {
+        //어디가 문제인지 체크 -> 모든 리스트를 체크하는 거였음.
             for (int i = 0; i < num_list.length; i++) {
                 if (num_list[i] < 0) {
                     return i;
                 }
             }
-        }
         return -1;
     }
 }
