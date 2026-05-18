@@ -7,6 +7,7 @@ public class arr_maker3 {
     두 번째 구간에 해당하는 배열을 앞뒤로 붙여 새로운 배열을 만들어 return 하는 solution 함수를 완성해 주세요.
      */
     public int[] solution(int[] arr, int[][] intervals) {
+        //두 배열 합쳐서 새 배열 반환
         int[] answer = {};
 
         return answer;
